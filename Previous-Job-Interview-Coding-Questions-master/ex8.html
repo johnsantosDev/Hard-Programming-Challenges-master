@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function compareThem()
+{
+	currentText=document.getElementById("current_text").value;
+	alertText=document.getElementById("alert_value").value;
+	if(currentText==alertText)
+	{
+		result=currentText.toUpperCase();
+	}
+	document.getElementById("current_text").value=result;
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML Events</title>
+</head>
+<body>
+<input type="textfield" id="current_text" onkeyup="compareThem()" /> <br />
+<input type="textfield" id="alert_value"  value="hello"/> 
+</body>
+</html>

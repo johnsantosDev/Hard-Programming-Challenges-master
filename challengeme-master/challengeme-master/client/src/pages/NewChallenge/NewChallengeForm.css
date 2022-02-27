@@ -1,0 +1,142 @@
+.newChallenge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(171.52deg, #1E3D5B 4.43%, rgba(30, 61, 91, 0) 149.79%);
+
+  
+}
+.newChallengeDark{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .newChallengeDark .newChallengeForm{
+  background: #4B79A1;  /* fallback for old browsers */
+  color: azure;
+ }
+
+.newChallengeForm {
+  margin:100px 0px 40px 0px;
+  border-radius:3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 70vw;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  min-width: 260px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.dark .newChallengeForm{
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.116),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.151),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.349),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.185),
+  0 100px 80px rgba(0, 0, 0, 0.13);
+}
+.dark .newChallengeForm, .dark .newChallengeForm textarea{
+  background: rgb(60, 62, 65); 
+  color: white;
+}
+.dark .newChallengeForm textarea::placeholder{
+  color: white;
+}
+.newChallengeFormheader{
+  padding-top: 2vh;
+}
+
+.descriptionTextArea {
+  min-width: 40vw;
+  max-width: 65vw;
+  max-height: 30vh;
+}
+#menu- > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded{
+  max-width: 40vw;
+}
+.newChallengeFormFeild {
+  width: 40vw;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.dark .newChallengeFormFeild label{
+  color:rgb(207, 207, 207);
+}
+.newChallengeFormButtons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  min-width: 260px;
+}
+
+.newChallengeFormDisplayErrors {
+  white-space: pre;
+  width: 80%;
+  font-size: 8px;
+  min-width: 200px;
+}
+
+.MuiAlert-standardError{
+  font-size: 10px !important;
+
+}
+.MuiAlertTitle-root{
+  font-size: 11px !important;
+}
+
+@media (max-width: 715px){
+  .MuiAlert-standardError{
+    font-size: 9px !important;
+  
+  }
+  .MuiAlertTitle-root{
+    font-size: 10px !important;
+  }
+}
+
+
+@media (max-width: 635px){
+  .MuiAlert-standardError{
+    font-size: 8px !important;
+  
+  }
+  .MuiAlertTitle-root{
+    font-size: 9px !important;
+  }
+}
+@media (max-width: 500px){
+  .MuiAlert-standardError{
+    font-size: 7px !important;
+  
+  }
+
+}
+
+@media (max-width: 440px){
+  .MuiAlert-standardError{
+    font-size: 6px!important;
+  
+  }
+  
+}
+@media (max-width: 700px) {  
+  .newChallengeForm{
+      width:95vw;
+  }
+  }
+  

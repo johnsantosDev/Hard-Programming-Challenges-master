@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function alertThis(index)
+{
+	var name= document.getElementById("selector").options[index].name;	
+	var value= document.getElementById("selector").options[index].value;
+	alert("Value: "+value+" Name: "+name);
+	//alert(value);	
+}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Selector Alertor</title>
+</head>
+<body>
+<select id="selector" onchange="alertThis(this.selectedIndex)">
+<option id="sel1" name="val1" value="option1">Option 1</option>
+<option id="sel2" name="val2" value="option2">Option 2</option>
+<option id="sel3" name="val3" value="option3">Option 3</option>
+<option id="sel4" name="val4" value="option4">Option 4</option>
+<option id="sel5" name="val5" value="option5">Option 5</option>
+</select>
+</body>
+</html>

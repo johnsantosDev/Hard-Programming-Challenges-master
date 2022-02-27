@@ -1,0 +1,41 @@
+The following code test questions test basic PHP and Javascript knowledge.  External libraries should not be used (CURL or jQuery) to answer the questions.  Answers should also be easy to read and follow and require minimal documentation.  Include comments if you feel something needs to be explains (which it might well be).
+You are being tested on both how well you understand PHP and Javascript as well as how legible your answers are.
+
+1) Basic computation (PHP)
+
+Given variable $a which equals a non-negative integer find all the factors.
+
+Assign the result to $result as an array.
+
+2) Basic string manipulation (JS)
+
+Given a string 'text' which is a mix of punctuation, uppercase, and lowercase characters convert all lowercase characters to uppercase and vice versa; except for any uppercase character following a '.' or '!'.
+
+Assign the value to 'result'.
+
+3) Numerical analysis (JS)
+
+Given an integer 'value' find the number of 0s, 1s, 2s, 3s, etc it has and place them in an object and output it as JSON.
+
+4) HTML (JS)
+
+Find the value and name of the selected option in a select element with id 'options'.  alert both the value and name or "no item selected" if none are selected.
+
+5) Class basics (PHP)
+
+Write a basic 'animal' class that includes the properties:  'color', 'height', 'number_of_legs', 'latin_name', and 'number_of_offspring'. Extend the class for five animals (your choice).
+
+6) Class extras (PHP)
+
+Add a method 'Create_offspring()' that returns a random array of offspring between 1 and 10.
+Add a method 'Get_parent()' that returns the parent of any of the offspring.
+Add a method 'Get_children()' that returns all the offspring of a particular animal.
+Add a method 'Get_number_of_descendants()' that returns a total count of all descendants.
+
+7) Test case (PHP)
+
+Write a system to test #6.
+
+8) HTML events (JS)
+
+When a text field with id 'current_text' contains text in 'alert_value' set the first occurence to all caps.

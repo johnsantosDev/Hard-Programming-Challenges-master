@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Digit Counter</title>
+</head>
+<body>
+<script>
+var zero_count=0;
+var one_count=0;
+var two_count=0;
+var three_count=0;
+var four_count=0;
+var five_count=0;
+var six_count=0;
+var seven_count=0;
+var eight_count=0;
+var nine_count=0;
+var value=234200043433412341245353404343434354545454;
+var wholeValue=value.toPrecision(50);
+var stringValue=wholeValue.toString();
+for(i=0;i<stringValue.length;i++)
+{
+	if(stringValue.charAt(i)==0)
+	{zero_count++;}
+	if(stringValue.charAt(i)==1)
+	{one_count++;}
+	if(stringValue.charAt(i)==2)
+	{two_count++;}
+	if(stringValue.charAt(i)==3)
+	{three_count++;}
+	if(stringValue.charAt(i)==4)
+	{four_count++;}
+	if(stringValue.charAt(i)==5)
+	{five_count++;}
+	if(stringValue.charAt(i)==6)
+	{six_count++;}
+	if(stringValue.charAt(i)==7)
+	{seven_count++;	}
+	if(stringValue.charAt(i)==8)
+	{eight_count++;	}
+	if(stringValue.charAt(i)==9)
+	{nine_count++;}
+	if(stringValue.charAt(i)==".")
+	{break;}
+}
+var numberOccurences= {"Num_Zeroes" : zero_count,
+					   "Num_Ones" : one_count,
+					   "Num_Twoes" : two_count,
+					   "Num_Threes" : three_count,
+					   "Num_Fours" : four_count,
+					   "Num_Fives" : five_count,
+					   "Num_Sixes" : six_count,
+					   "Num_Sevens" : seven_count,
+					   "Num_Eights" : eight_count,
+					   "Num_Nines" : nine_count,};
+					   
+document.write("This is the number "+stringValue+"<br/>"+
+			   "Number of Zeroes: "+numberOccurences.Num_Zeroes+"<br/>"+
+			   "Number of Ones: "+numberOccurences.Num_Ones+"<br/>"+
+			   "Number of Twoes: "+numberOccurences.Num_Twoes+ "<br/>"+
+			   "Number of Threes: "+numberOccurences.Num_Threes+ "<br/>"+
+			   "Number of Fours: "+numberOccurences.Num_Fours+ "<br/>"+
+			   "Number of Fives: "+numberOccurences.Num_Fives+ "<br/>"+
+			   "Number of Sixes: "+numberOccurences.Num_Sixes+ "<br/>"+
+			   "Number of Sevens: "+numberOccurences.Num_Sevens+ "<br/>"+
+			   "Number of Eights: "+numberOccurences.Num_Eights+"<br/>"+
+			   "Number of Nines: "+numberOccurences.Num_Nines );
+
+
+</script>
+</body>
+</html>

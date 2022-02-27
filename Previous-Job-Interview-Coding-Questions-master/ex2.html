@@ -1,0 +1,37 @@
+<script>
+//An easier way to accomplish this task would be with the use of RegExp. It would take less code however since RegExp in Javascript is derived from Perl, I shall use plain old Javascript to accomplish this task.
+var string="This is a mixed String with! mixed PUNTUATION.I shall attempt to? convert LOWER CASE!to upper case.";
+var result="";
+
+//Initiates a loop from 0 to the max length of the string
+for(i=0;i<string.length;i++)
+{
+		//Checks if the character at the instance is in uppercase, if yes then it checks if character at previous instance is . or !, if yes then it does nothing 
+		//else it converts the character to lowercase
+		if(string.charAt(i)==string.charAt(i).toUpperCase())
+		{
+			if(string.charAt(i-1)=="."||string.charAt(i-1)=="!")
+			{
+				result=result+string.charAt(i);	
+			}
+			else
+			{
+			result=result+string.charAt(i).toLowerCase();
+			}
+		}
+		//Similar to the check for uppercase, except it checks if the character at i is in lower case, if yes then it checks if preceding character is . or ! if yea then it does nothing else it converts to uppercase.
+		else if(string.charAt(i)==string.charAt(i).toLowerCase())
+		{
+			if(string.charAt(i-1)=="."||string.charAt(i-1)=="!")
+			{
+			result=result+string.charAt(i);
+			}
+			else
+			{
+			result=result+string.charAt(i).toUpperCase();
+			}
+		}
+}
+document.write("<b>REAL STRING:</b>"+string+"<br>");
+document.write("<b>RESULT STRING:</b>"+result);
+</script>
